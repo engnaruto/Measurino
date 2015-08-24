@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.naruto.measurino.MeasurinoEditor" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/toolBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="ImageView"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"
+        android:text="@string/hello_world" />
+
+    <HorizontalScrollView
+        android:id="@+id/toolBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/navbar_background"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/drawLineButton"
+                style="@style/navbar_button"
+                android:drawableTop="@drawable/navbar_allselector"
+                android:text="Draw Line" />
+
+            <RadioButton
+                android:id="@+id/drawRectangleButton"
+                style="@style/navbar_button"
+                android:layout_marginLeft="5dp"
+                android:drawableTop="@drawable/navbar_pictureselector"
+                android:text="Draw Rectangle" />
+
+            <RadioButton
+                android:id="@+id/editDimentionsButton"
+                style="@style/navbar_button"
+                android:layout_marginLeft="5dp"
+                android:drawableTop="@drawable/navbar_videoselector"
+                android:text="Edit Dimentions" />
+
+            <RadioButton
+                android:id="@+id/editColorButton"
+                style="@style/navbar_button"
+                android:layout_marginLeft="5dp"
+                android:drawableTop="@drawable/navbar_fileselector"
+                android:text="Edit Color" />
+
+            <RadioButton
+                android:id="@+id/deleteShapeButton"
+                style="@style/navbar_button"
+                android:layout_marginLeft="5dp"
+                android:drawableTop="@drawable/navbar_moreselector"
+                android:text="Delete" />
+            <RadioButton
+                android:id="@+id/saveButton"
+                style="@style/navbar_button"
+                android:layout_marginLeft="5dp"
+                android:drawableTop="@drawable/navbar_moreselector"
+                android:text="Save Dimentions" />
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/btnMore2" -->
+            <!-- style="@style/navbar_button" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:drawableTop="@drawable/navbar_moreselector" -->
+            <!-- android:text="HHHHH" /> -->
+
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/btnMorecc2" -->
+            <!-- style="@style/navbar_button" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:drawableTop="@drawable/navbar_moreselector" -->
+            <!-- android:text="HHHHH" /> -->
+        </RadioGroup>
+    </HorizontalScrollView>
+
+</RelativeLayout>
